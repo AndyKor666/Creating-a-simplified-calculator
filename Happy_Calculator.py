@@ -10,6 +10,8 @@ def Termin(a,b):
         print("--------------------------------")
     else:
         return a/b
+def Perc(a,b):
+    return (a*b)/100
 
 print("======= HAPPY CALCULATOR =======")
 print("--------------------------------")
@@ -41,5 +43,8 @@ elif ch==3:
     print("--------------------------------")
 elif ch==4:
     print(">> Result:",Termin(n1,n2))
+    print("--------------------------------")
+else:
+    print(">> Result:",Perc(n1,n2))
     print("--------------------------------")
 print("================================")
