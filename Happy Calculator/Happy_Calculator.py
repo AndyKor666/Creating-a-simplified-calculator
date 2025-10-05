@@ -1,3 +1,5 @@
+def Plus(a,b):
+    return a+b
 
 print("======= HAPPY CALCULATOR =======")
 print("--------------------------------")
@@ -10,7 +12,7 @@ print("--------------------------------")
 while True:
     ch=int(input(">> Your choice -> "))
     print("--------------------------------")
-    if ch<0 or ch>5:
+    if ch<1 or ch>5:
         print(">> ERR.... No such choice.")
         print("--------------------------------")
     else:
@@ -18,3 +20,7 @@ while True:
 n1=float(input(">> Input the 1st number: "))
 n2=float(input(">> Input the 2nd number: "))
 print("--------------------------------")
+if ch==1:
+    print(">> Result:",Plus(n1,n2))
+    print("--------------------------------")
+print("================================")
