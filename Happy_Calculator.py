@@ -4,6 +4,12 @@ def Minus(a,b):
     return a-b
 def Mult(a,b):
     return a*b
+def Termin(a,b):
+    if a==0 or b==0:
+        print(">> ERR....")
+        print("--------------------------------")
+    else:
+        return a/b
 
 print("======= HAPPY CALCULATOR =======")
 print("--------------------------------")
@@ -32,5 +38,8 @@ elif ch==2:
     print("--------------------------------")
 elif ch==3:
     print(">> Result:",Mult(n1,n2))
+    print("--------------------------------")
+elif ch==4:
+    print(">> Result:",Termin(n1,n2))
     print("--------------------------------")
 print("================================")
